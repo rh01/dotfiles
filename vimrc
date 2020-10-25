@@ -34,6 +34,9 @@ Plug 'tpope/vim-scriptease'
 Plug 'tpope/vim-rails'
 Plug 'vim-ruby/vim-ruby'
 Plug 'tyru/open-browser.vim'
+Plug 'rust-lang/rust.vim'
+Plug 'preservim/tagbar'
+
 
 call plug#end()
 
@@ -626,3 +629,13 @@ nmap <Leader>gc <Plug>(grammarous-close-info-window)
 nmap <Leader>gf <Plug>(grammarous-fixit)
 
 " vim: sw=2 sw=2 et
+"  ================== rust ===============
+let g:rustfmt_autosave = 1
+let g:rust_clip_command = 'pbcopy'
+nmap <Leader>rr :RustRun<CR>
+nmap <Leader>cr :Cargo run<CR>
+nmap <Leader>ct :Cargo test<CR>
+
+" ================== TagBar =============
+nmap <Leader>tb :TagbarToggle<CR>
+

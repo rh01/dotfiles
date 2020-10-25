@@ -302,5 +302,7 @@ eval "$(jump shell)"
 # brew install rbenv
 eval "$(rbenv init -)"
 
-export PATH="/usr/local/opt/mysql-client/bin:$PATH"
-export PATH="/usr/local/opt/mysql-client@5.7/bin:$PATH"
+#export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+#export PATH="/usr/local/opt/mysql-client@5.7/bin:$PATH"
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export PATH="/usr/local/opt/python@3.7/bin:$PATH"
